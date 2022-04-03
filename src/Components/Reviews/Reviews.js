@@ -7,14 +7,17 @@ const Reviews = () => {
     const [reviews] = useReviews();
 
     return (
-        <div className='grid lg:grid-cols-3 gap-10 my-16'>
-            {
-                reviews.map(r => <EachReview
-                    key={r.id}
-                    eachReview={r}
-                ></EachReview>)
-            }
-        </div>
+        <>
+            <h1 className='text-center text-4xl font-semibold mt-24'>Our honorable customers</h1>
+            <div className='grid lg:grid-cols-3 gap-20 my-16'>
+                {
+                    reviews.map(r => <EachReview
+                        key={r.id}
+                        eachReview={r}
+                    ></EachReview>)
+                }
+            </div>
+        </>
     );
 };
 
