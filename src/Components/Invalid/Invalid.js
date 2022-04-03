@@ -1,9 +1,10 @@
 import React from 'react';
+import logo from '../../Assets/404.jpg';
 
 const Invalid = () => {
     return (
         <div>
-            <h1>404, this is invalid</h1>
+            <img className='w-2/4 mx-auto' src={logo} alt="" />
         </div>
     );
 };
