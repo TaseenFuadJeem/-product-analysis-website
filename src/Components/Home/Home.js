@@ -17,7 +17,7 @@ const Home = () => {
                     <p>
                         With groundbreaking performance in both still and movie recording, the α7 IV is the ideal hybrid, providing breathtaking imagery along with on-the-spot delivery and distribution. The α7 IV is a camera designed to bring to life the artistic visions of today's creators.
                     </p>
-                    <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full my-10">
+                    <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full my-10">
                         View Product
                     </button>
                 </div>
