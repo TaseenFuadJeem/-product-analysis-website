@@ -29,6 +29,11 @@ const CustomerReview = () => {
                     <p title={review3?.review}>{review3?.review.length > 200 ? review3?.review.slice(0, 200) + "....." : review3?.review}</p>
                 </div>
             </div>
+            <div className='flex justify-center'>
+                <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full my-6">
+                    SHOW ALL
+                </button>
+            </div>
         </div>
     );
 };
