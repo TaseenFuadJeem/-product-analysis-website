@@ -1,6 +1,7 @@
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useReviews from '../../Hooks/useReviews';
 
 const CustomerReview = () => {
@@ -54,9 +55,11 @@ const CustomerReview = () => {
             </div>
             <div className='flex justify-center'>
 
-                <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full my-6">
-                    SHOW ALL
-                </button>
+                <Link to="/reviews">
+                    <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full my-6">
+                        SHOW ALL
+                    </button>
+                </Link>
             </div>
         </div>
     );
