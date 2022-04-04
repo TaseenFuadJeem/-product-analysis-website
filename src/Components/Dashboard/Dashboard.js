@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { CartesianGrid, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { BarChart, Bar, CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Dashboard = () => {
 
@@ -24,6 +24,18 @@ const Dashboard = () => {
                 </LineChart>
             </div>
 
+            <h1 className='text-center text-4xl font-semibold mt-20 my-10'>Our Revenue and Investment</h1>
+            <div className='flex justify-center mb-20'>
+                <BarChart width={800} height={500} data={data}>
+                    <CartesianGrid strokeDasharray="3 3" ></CartesianGrid>
+                    <XAxis dataKey="revenue"></XAxis>
+                    <YAxis></YAxis>
+                    <Tooltip></Tooltip>
+                    <Legend></Legend>
+                    <Bar dataKey="investment" fill="#8884d8" />
+                    <Bar dataKey="revenue" fill="#82ca9d" />
+                </BarChart>
+            </div>
         </div>
     );
 };
